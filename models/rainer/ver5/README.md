@@ -3,8 +3,20 @@
 ***very quick & very dirty***
 Rainer, April 14th 2020
 
-## model file:  parkinglotnerds5.h5
-## config file: myconfig.py
-## run model:   multi_train4.py
+## model file
+parkinglotnerds5.h5
 
-we need to make the model run by this script so we can get all the telemetry data: run_pln5.py
+## config file
+myconfig.py
+
+## run model
+multi_train4.py
+
+
+## Tawns fastest client eith fewest dependencies
+[racer.py](https://gist.github.com/tawnkramer/a74938653ab70e3fd22af1e4788a5001)
+
+example usage:
+```
+python racer.py --host trainmydonkey.com --model models\lane_keeper.h5 --name Tawn
+```
