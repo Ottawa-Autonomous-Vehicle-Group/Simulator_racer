@@ -8,6 +8,17 @@
 - Model file: paul-tub20-ver01.h5
 - Data zip file: tub_20_20-04-20.zip
 
+# Ver01 slide 200ms
+- using naisy's tool to slide image and control data offset to 200ms
+- Testing
+	- Local sim: set "SIM_ARTIFICIAL_LATENCY = 200" in my config
+	- Remote testing
+		1. Ping remote sim server to get ping times
+		2. Subtract ping time from 200ms (eg 200-100 for 100ms ping time)
+		3. set "SIM_ARTIFICIAL_LATENCY = <step 2 value>"
+- Model file: paul-tub20-ver01-slide200.h5
+- Data zip file: tub_20_20-04-20_slide200.zip
+
 # Ver02
 
 - This model will go a little faster than Ver01
@@ -18,3 +29,17 @@
 
 
 ![Model sim screenshot](https://github.com/Ottawa-Autonomous-Vehicle-Group/Simulator_racer/blob/master/models/paul/ver02/Screenshot%20from%202020-04-21%2000-49-10.png)
+
+
+# Ver02 slide 200ms
+- Found that model is more robust if you set "AI_THROTTLE_MULT = 0.95"
+- using naisy's tool to slide image and control data offset to 200ms
+- Testing
+	- Local sim: set "SIM_ARTIFICIAL_LATENCY = 200" in my config
+	- Remote testing
+		1. Ping remote sim server to get ping times
+		2. Subtract ping time from 200ms (eg 200-100 for 100ms ping time)
+		3. set "SIM_ARTIFICIAL_LATENCY = <step 2 value>"
+
+- Model file: paul-tub21-ver02-slide200.h5
+- Data zip file: tub_21_20-04-20_slide200.zip
