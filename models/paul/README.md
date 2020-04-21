@@ -43,3 +43,13 @@
 
 - Model file: paul-tub21-ver02-slide200.h5
 - Data zip file: tub_21_20-04-20_slide200.zip
+
+
+# Ver03 line racer
+- This is a simple line follower based on Tawn's racer.py standalone client script
+- It uses the cross-track error (cte) and a simple PID (Kp and KD only) to keep the car in the right lane
+- It is limited in speed because it reacts too slowly when there is a quick change in the track such as a hairpin turn
+- Fastest lap with current PID is ~28 secs
+- Possible improvements would be a look-ahead if we had the layout and our position on the track
+- Python racing client script: line_racer_v01.py
+- Usage: python line_racer_v01.py --model=<model filename> --host=<sim host>=--name=<name of racer>
